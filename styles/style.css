@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 148px 1fr;
   align-content: space-around;
   align-items: center;
-  width: 1100px;
   height: 293px;
 }
 
@@ -12,9 +11,11 @@
   align-items: center;
   justify-content: center;
   padding-top: 2px;
-  padding-left: 34px;
-  gap: 14px;
+  padding-left: 30px;
+  gap: 8px;
   list-style: circle;
+  text-underline-offset: 4px;
+  text-indent: 6px;
 }
 
 .header__links-list-item {
@@ -41,6 +42,7 @@
   justify-content: center;
   padding-left: 186px;
   padding-top: 2px;
+  text-underline-offset: 4px;
 }
 
 .address {
@@ -52,9 +54,9 @@
 }
 
 .cover {
+  position: relative;
   background-image: url(/images/cover.jpg);
   height: 757px;
-  background-size: cover; 
   background-repeat: no-repeat; 
 }
 
@@ -65,12 +67,12 @@
   text-transform: uppercase;
   padding: 165px 50px 237px 50px;
   position: relative;
+  letter-spacing: 30px;
   z-index: 2;
 }
 
 .aligned-text {
   display: block;
-  line-height: 1.38;
 }
 
 .aligned-text_center {
@@ -90,7 +92,10 @@
   letter-spacing: 0.6em;
 }
 
-.overlay {
+
+/* Подумать как допилить overlay чтобы накидывать его только на картинки */
+
+/* .overlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
@@ -98,5 +103,67 @@
   top: 0;
   left: 0;
   z-index: 0;
+} */
+
+
+.lots {
+  padding: 179px 24px 0 24px;
 }
+
+.lots__heading {
+  font-family: Raleway, sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-left: 40px;
+  padding-bottom: 27px;
+}
+
+.lots__card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 334px;
+  min-height: 563px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_type_film {
+  background: url(/images/card-lot-01.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 563px;
+  
+}
+
+.card__title {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 51px 40px 0 40px;
+  text-decoration: underline;
+}
+
+.card__text {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 
