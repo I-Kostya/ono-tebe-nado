@@ -9,10 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   padding-top: 2px;
   padding-left: 30px;
-  text-indent: 6px;
+  text-indent: 2px;
   list-style: circle;
 }
 
@@ -70,7 +70,7 @@
 .cover__title {
   position: relative;
   z-index: 2;
-  padding: 165px 50px 237px 50px;
+  padding: 164px 50px 237px 50px;
   color: #fff;
   font-family: Raleway, serif;
   font-size: 100px;
@@ -78,24 +78,66 @@
   text-transform: uppercase;
 }
 
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
 .aligned-text {
   display: block;
 }
 
 .aligned-text_center {
+  padding-top: 10px;
+  padding-left: 2px;
   text-align: center;
 }
 
 .aligned-text_right {
+  padding-top: 3px;
   text-align: right;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .letter-spacing-default {
   letter-spacing: 6px;
 }
 
-.letter-spacing-extended {
-  letter-spacing: 0.6em;
+.huge-letter-spacing {
+  letter-spacing: 24.2px;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  margin-top: -110px;
+}
+
+.cover__description-text {
+  padding-left: 78px;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 19px;
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  margin-left: 76px;
+  border-width: 1px;
+  border-color: #fff;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
 }
 
 .lots {
@@ -215,30 +257,6 @@
   font-family: Raleway, sans-serif;
   font-size: 20px;
   line-height: 1.2;
-}
-
-.no-letter-spacing {
-  letter-spacing: normal;
-}
-
-.shorter-letter-spacing {
-  letter-spacing: 0.2px;
-}
-
-.short-letter-spacing {
-  letter-spacing: 0.4px;
-}
-
-.negative-letter-spacing {
-  letter-spacing: -0.2px;
-}
-
-.medium-letter-spacing {
-  letter-spacing: 0.6px;
-}
-
-.higher-letter-spacing {
-  letter-spacing: 0.8px;
 }
 
 .footer {
