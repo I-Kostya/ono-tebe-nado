@@ -38,7 +38,9 @@
 .header__address {
   display: flex;
   flex-direction: column;
-  padding-left: 186px;
+  justify-self: end;
+  padding-right: 83px;
+  /* padding-left: 186px; */
 }
 
 .address {
