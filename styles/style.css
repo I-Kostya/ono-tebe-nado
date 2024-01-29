@@ -54,7 +54,6 @@
   position: relative;
   min-height: 757px;
   background-image: url(../images/cover.jpg);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -107,10 +106,6 @@
   letter-spacing: 6px;
 }
 
-.huge-letter-spacing {
-  letter-spacing: 24.2px;
-}
-
 .cover__description {
   position: relative;
   z-index: 2;
@@ -124,7 +119,7 @@
   font-family: Raleway, sans-serif;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 19px;
+  word-spacing: 18.8px;
 }
 
 .bet-button {
@@ -156,14 +151,14 @@
 .lots__card-list {
   display: flex;
   flex-grow: 1;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 30px;
 }
 
 .lots__card-list-item {
   position: relative;
   width: 334px;
-  min-height: 563px;
+  padding-bottom: 30px;
 }
 
 .card {
@@ -196,7 +191,6 @@
   font-family: Raleway, sans-serif;
   font-size: 22px;
   line-height: 1.2;
-  text-decoration: underline;
   text-transform: uppercase;
 }
 
